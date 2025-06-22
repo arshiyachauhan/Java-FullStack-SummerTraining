@@ -1,6 +1,6 @@
-# Java-Fullstack-SummerTraining 🚀
+# Java-FullStack-SummerTraining 🚀
 
-This repository contains Java code examples, exercises, and conceptual demonstrations created during the **SummerPEP Full Stack Development Training**. The purpose is to build a strong foundation in Java as a backend language and apply it in full-stack applications.
+This repository contains Java code examples, exercises, and conceptual demonstrations created during the **Summer Full Stack Development Training**. The purpose is to build a strong foundation in Java as a backend language and apply it in full-stack applications.
 
 ## 📚 Contents
 
