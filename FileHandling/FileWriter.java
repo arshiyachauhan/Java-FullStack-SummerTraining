@@ -9,6 +9,8 @@ public class WriteFile {
             writer.write("Student 1: John Doe");
             writer.newLine();
             writer.write("Student 2: Jane Smith");
+            writer.newLine();
+            writer.write("Student 3: Mary Jason");
             System.out.println("Successfully wrote to file");
         } catch(IOException e){
             e.printStackTrace();
