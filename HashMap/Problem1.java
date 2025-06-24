@@ -9,7 +9,7 @@ Implement the following functionalities-
 
 import java.util.HashMap;
 
-public class HashMapProb {
+public class Problem1 {
     public static void main(String[] args) {
         HashMap<String, Integer> studentGrades = new HashMap<>();
         
