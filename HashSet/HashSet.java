@@ -1,7 +1,7 @@
 //SYNTAX- HashSet<DataType> hashSetNmae= new HashSet<>();
 import java.util.HashSet;
 import java.util.Iterator;
-public class HashSetIntro {
+public class HashSet {
     public static void main(String[] args) {
         HashSet<String> fruits= new HashSet<>();
         fruits.add("apple");
