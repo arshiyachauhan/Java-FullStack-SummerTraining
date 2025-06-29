@@ -1,0 +1,18 @@
+ques: 
+Design a Banking System with 4 primary classes to represent the core entities: 
+Customer, Account, Transaction,Bank. All data is manged in runtime memory using collections.
+-Customer- Represents a client of Bank
+-Account- Represents a bank account, which can be of different types(i.e., Savings, Checkings)
+-Transaction- Represents a single transaction(deposit or withdrawl)
+-Bank- The main class that orchestrates the entire system managing customers and their accounts
+- Create two enum classes- AccountType and TransactionType
+
+
+4 pillars of OOP:
+Encapsulation – Hiding data inside a class and protecting it from outside access.
+Abstraction – Showing only essential features and hiding unnecessary details.
+Inheritance – One class can reuse the features of another class.
+
+ArrayList- used for dynamic insertion of elements
+Hashmap- has faster lookup time, faster retrieval of data
+Atomic Long- Used to generste unique account number, Maintains atomicity in serial order
