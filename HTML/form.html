@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="form.css">     
+</head>
+<body>
+    <div style="background-color: rgb(126, 210, 193); padding: 10px;">
+    <!-- <form action="/submit"> 
+        <input type="text"> Single line text<br>
+        <input type="email"> Email validation<br>
+        <input type="password"> Hidden characters<br>
+        <input type="checkbox"> Tic able box<br>
+        <input type="radio"> Select one option from many<br>
+        <input type="number"> number<br>
+        <input type="date"> dob<br>
+    </form> -->
+
+    <!-- adding/using attributes- 
+    required-> field must be filled
+    value-> predifined value
+    name-> key for sending form data
+    disabled/ readonly-> prevents input -->
+      
+    <h2>Student Details</h2>
+    <form action="/submit"> 
+    <fieldset>
+        <legend>Personal Details</legend>
+
+    <label for="first_name">Full Name: </label>
+    <input type="text" name="first_name" required><br><br>
+    
+    <label for="email">Email: </label><br>
+    <input type="email" name="email" required><br><br>
+    <label for="password">Password: </label><br>
+    <input type="password" name="password" required><br><br>
+
+    <label for="gender">Gender: </label><br>
+    <input type="radio" name="gender" value="M" required> M
+    <input type="radio" name="gender" value="F"> F<br><br>
+
+    <label for="age">Age: </label><br>
+    <input type="number" name="age" min="1" max="120" required><br><br>
+    <label for="dob">DOB: </label><br>
+    <input type="date" name="dob" required><br><br>
+
+    <label for="course">Courses: </label><br>
+    <input type="checkbox" name="course" value="HTML"> HTML
+    <input type="checkbox" name="course" value="CSS"> CSS
+    <input type="checkbox" name="course" value="JS"> JS<br><br>
+
+    Note: <input type="text" value="Online Registration valid for 2 courses" readonly><br><br>  
+
+
+        <label for="phone">Phone no.: </label>
+        <input type="text" id="phone" name="phone"><br><br>
+        <label for="country"> Select Country: </label>
+        <select id="country" name="country">
+            <option value="in">Indian</option>
+            <option value="us">USA</option>
+            <option value="ru">Russia</option>
+            <option value="au">Australlia</option>
+        </select>
+    </fieldset><br>
+
+    <fieldset>
+        <legend>Feedback and Queries</legend>
+        <label for="msg">Your message: </label><br>
+        <textarea id="msg" name="msg" placeholder="Type your message here" rows="5" cols="30" required></textarea>
+        <br><br>
+
+        <input type="checkbox" name="subs" value="subs">Enroll Into Course
+    </fieldset>
+    <input type="submit" value="Submit Form ">
+    <input type="reset" value="Reset Form">
+</form>
+</div>
+</body>
+</html>
