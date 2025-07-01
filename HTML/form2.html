@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="form.css"> 
+</head>
+<body>
+<!-- adding CSS through classes -->
+ <h2 class="heading-main">Student Details Form</h2>
+ <div class="form-container">
+        <form action="/submit">
+
+            <fieldset class="form-fieldset">
+                <legend class="form-legend">Personal Details</legend>
+
+                <div class="form-row">
+                    <label for="first_name" class="form-label">Full Name:</label>
+                    <input type="text" name="first_name" required class="form-input">
+                </div>
+
+                <div class="form-row">
+                    <label for="email" class="form-label">Email:</label>
+                    <input type="email" name="email" required class="form-input">
+                </div>
+
+                <div class="form-row">
+                    <label for="password" class="form-label">Password:</label>
+                    <input type="password" name="password" required class="form-input">
+                </div>
+
+                <div class="form-row">
+                    <label class="form-label">Gender:</label>
+                    <input type="radio" name="gender" value="M" required class="form-radio"> M
+                    <input type="radio" name="gender" value="F" class="form-radio"> F
+                </div>
+
+                <div class="form-row">
+                    <label for="age" class="form-label">Age:</label>
+                    <input type="number" name="age" min="1" max="120" required class="form-input">
+                </div>
+
+                <div class="form-row">
+                    <label for="dob" class="form-label">DOB:</label>
+                    <input type="date" name="dob" required class="form-input">
+                </div>
+
+                <div class="form-row">
+                    <label class="form-label">Courses:</label>
+                    <input type="checkbox" name="course" value="HTML"> HTML
+                    <input type="checkbox" name="course" value="CSS"> CSS
+                    <input type="checkbox" name="course" value="JS"> JS
+                </div>
+
+                <div class="form-row">
+                    <label class="form-label">Note:</label>
+                    <input type="text" value="Online Registration valid for maximum 2 courses" readonly class="form-input">
+                </div>
+
+                <div class="form-row">
+                    <label for="phone" class="form-label">Phone No.:</label>
+                    <input type="text" id="phone" name="phone" class="form-input">
+                </div>
+
+                <div class="form-row">
+                    <label for="country" class="form-label">Select Country:</label>
+                    <select id="country" name="country" class="form-select">
+                        <option value="in">Indian</option>
+                        <option value="us">USA</option>
+                        <option value="ru">Russia</option>
+                        <option value="au">Australia</option>
+                    </select>
+                </div>
+            </fieldset>
+
+            <fieldset class="form-fieldset">
+                <legend class="form-legend">Feedback and Queries</legend>
+
+                <div class="form-row">
+                    <label for="msg" class="form-label">Your message:</label>
+                    <textarea id="msg" name="msg" placeholder="Type your message here" rows="5" class="form-textarea" required></textarea>
+                </div>
+
+                <div class="form-row">
+                    <input type="checkbox" name="subs" value="subs"> Enroll Into Course
+                </div>
+            </fieldset>
+
+            <input type="submit" value="Submit Form" class="form-button form-submit">
+            <input type="reset" value="Reset Form" class="form-button form-reset">
+        </form>
+    </div>
+    
+</body>
+</html>
