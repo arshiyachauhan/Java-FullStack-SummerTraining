@@ -33,3 +33,23 @@ const car={
 for(const key in car){
     console.log(`${key}: ${car[key]}`);
 }
+
+let day="Monday";
+switch(day){
+    case "Monday":
+        console.log("Start the week");
+        break;
+    case "Tuesday":
+        console.log("second day");
+        break;
+    case "Friday":
+        console.log("almost weekend");
+        break;
+    default:
+        console.log("other weekdays");
+}
+
+//ternary operator
+let age= 17;
+let canVote=(age>=18)?"Yes can vote":"No cannot vote";
+console.log(canVote);
