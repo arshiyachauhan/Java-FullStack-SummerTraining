@@ -10,7 +10,7 @@ This repository contains Java code examples, exercises, and conceptual demonstra
 - ✅ Collections and Generics
 - ✅ Multithreading and Synchronization
 - ✅ File Handling and Interfaces
-- ✅ Practice Programs and Interview QnA
+- ✅ Practice Programs
 - ✅ Mini projects and assignments
 
 ---
