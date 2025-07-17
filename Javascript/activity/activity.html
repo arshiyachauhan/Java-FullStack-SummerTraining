@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="activity.css"> 
+</head>
+<body>
+        <h2>Contact Us Form</h2>
+
+    <form action="/submit"> 
+    <fieldset>
+        <legend>Personal Details</legend>
+
+    <label for="first_name">Full Name: </label>
+    <input type="text" name="first_name" required><br><br>
+    
+    <label for="email">Email: </label><br>
+    <input type="email" name="email" required><br><br>
+    <label for="password">Password: </label><br>
+    <input type="password" name="password" required><br><br>
+
+    <label for="gender">Gender: </label><br>
+    <input type="radio" name="gender" value="M" required> M
+    <input type="radio" name="gender" value="F"> F<br><br>
+
+    <label for="age">Age: </label><br>
+    <input type="number" name="age" min="1" max="120" required><br><br>
+    <label for="dob">DOB: </label><br>
+    <input type="date" name="dob" required><br><br>
+
+    <label for="course">Courses: </label><br>
+    <input type="checkbox" name="course" value="HTML"> HTML
+    <input type="checkbox" name="course" value="CSS"> CSS
+    <input type="checkbox" name="course" value="JS"> JS<br><br>
+
+    Note: <input type="text" value="Online Registration valid for 2 courses" readonly><br><br>  
+
+        <label for="phone">Phone no.: </label>
+        <input type="text" id="phone" name="phone"><br><br>
+        <label for="country"> Select Country: </label>
+        <select id="country" name="country">
+            <option value="in">Indian</option>
+            <option value="us">USA</option>
+            <option value="ru">Russia</option>
+            <option value="au">Australlia</option>
+        </select>
+    </fieldset><br>
+
+    <fieldset>
+        <legend>Feedback and Queries</legend>
+        <label for="msg">Your message: </label><br>
+        <textarea id="msg" name="msg" placeholder="Type your message here" rows="5" cols="30" required></textarea>
+        <br><br>
+
+        <input type="checkbox" name="subs" value="subs">Enroll Into Course
+    </fieldset>
+    <input type="submit" value="Submit Form ">
+    <input type="reset" value="Reset Form">
+</form>
+</div>
+<script src="activity.js"></script>
+</body>
+</html>
